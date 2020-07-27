@@ -1,0 +1,58 @@
+html,body {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+#container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+#homeSection{
+position: absolute;
+width: 100%;
+height: 1024px;
+left: 0px;
+top: 0px;
+background: black;
+
+}
+#homeSection p {
+position: absolute;
+width: 486px;
+height: 42px;
+left: 94px;
+top: 198px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 42px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+#aboutSection{
+position: absolute;
+width: 1440px;
+height: 1024px;
+left: 0px;
+top: 1024px;
+background: #C83A6D;
+}
+
+#workSection {
+position: absolute;
+width: 1440px;
+height: 1024px;
+left: 0px;
+top: 2048px;
+background: #00A0D2;
+}
