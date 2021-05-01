@@ -4,6 +4,8 @@ html,body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
+    color: #FFFFFF;
     
 }
 #container {
@@ -24,18 +26,16 @@ background: black;
 }
 #homeSection #title {
 position: absolute;
-width: 486px;
-height: 42px;
+width: 28vw;
+height: 8vw;
 left: 94px;
 top: 198px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 900;
-font-size: 36px;
-line-height: 42px;
+font-size:2vw;
 display: flex;
 align-items: center;
-
 color: #FFFFFF;
 }
 
@@ -45,7 +45,16 @@ width: 1440px;
 height: 1024px;
 left: 0px;
 top: 1024px;
-background: #C83A6D;
+background: #000000;
+
+}
+#aboutText {
+    width: 500px;
+    left: 94px;
+    
+}
+#aboutText p {
+    font-size: 35px;
 }
 
 #workSection {
