@@ -7,11 +7,11 @@ body {
 }
 header {
     position: fixed;
-    background-color:#FF5454;
+    /* background-color:#FF5454; */
     color: black;
     padding: 0px;
     margin: 0px;
-    text-align: right;
+    text-align: left;
     width: 100%;
     z-index: 1;
     top:0px;
@@ -22,27 +22,36 @@ header h1 {
     color: white;
     left: 0;
     top: 0;
-    padding: 5px;
-    display: inline-block;
+    padding: 30px;
+    margin-top: 0;
+    /* display: inline-block; */
 }
 .banner {
     position: relative;
+    display: inline-block;
+    z-index: 1;
 }
-.banner img {
-    max-width: 100%;
+.imgContainer {
     
+    background-color: blue;
+    width: 256px;
+    height: 256px;
+
 }
-.banner h2 {
+.imgContainer img {
+    width: 100%;
+}
+/* .banner h2 {
     position: absolute;
     left: 60%;
     top: 39%;
-    padding: 20px;
-}
+    padding: 80px;
+} */
 nav {
     position: sticky;
     background-color: rgb(34, 34, 34);
     padding: 20px;
-    top: 90px;
+    top: 98px;
 }
 nav ul {
     white-space: nowrap;
@@ -52,11 +61,19 @@ nav ul {
 nav li {
     display: inline-block;
     width: 25%;
-    font-size: 15px;
+    font-size: 12px;
 }
 nav li a {
     text-decoration: none;
     color: white;
+    font-family: monospace;
+    
+}
+nav li a:hover{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
 }
 main {
     max-width: 100%;
