@@ -14,7 +14,7 @@ header {
     text-align: left;
     width: 100%;
     z-index: 1;
-    top:0px;
+    top: 0px;
     left: 0px;
 }
 header h1 {
@@ -24,37 +24,27 @@ header h1 {
     top: 0;
     padding: 30px;
     margin-top: 0;
+    font-size: 2.5em;
     /* display: inline-block; */
 }
 .banner {
     position: relative;
-    display: inline-block;
     z-index: 1;
 }
 .imgContainer {
-    
-    background-color: blue;
-    width: 256px;
-    height: 256px;
-    
-
+    max-width: 100%;
 }
 .imgContainer img {
 
-    width: 100%;
+    width: 128px;
 
 }
-/* .banner h2 {
-    position: absolute;
-    left: 60%;
-    top: 39%;
-    padding: 80px;
-} */
 nav {
     position: sticky;
     background-color: rgb(34, 34, 34);
     padding: 20px;
-    top: 98px;
+    top: 108px;
+    z-index: 1;
 }
 nav ul {
     white-space: nowrap;
@@ -65,12 +55,13 @@ nav ul {
 nav li {
     display: inline-block;
     width: 25%;
-    font-size: 16px;
+    font-size: 18px;
 }
 nav li a {
     text-decoration: none;
     color: white;
     font-family: monospace;
+    font-size: 1em;
     
 }
 nav li a:hover{
@@ -88,11 +79,25 @@ main {
 }
 
 .home {
+    /* position: relative; */
     min-height: 1024px;
     background-color: rgb(24, 24, 24);
     font-size: 12px;
     color: white;
+    text-align: left;
 }
+.homeText {
+    position: relative;
+    display: block;
+    left: 10%;
+    top: 140px;
+    width: 50%;
+    margin:12px;
+    font-size: 64px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
 .works {
     min-height: 1024px;
     background-color: rgb(24, 24, 24);
@@ -105,18 +110,61 @@ main {
     font-size: 12px;
     color: white;
 }
+.about h1{
+    position: relative;
+    display: block;
+    margin: 12px;
+    top:60px;
+    left: 10%;
+    font-size: 34px;
+    text-align: left;
+}
+.about p {
+    text-align: left;
+    position: relative;
+    display: block;
+    margin: 12px;
+    left: 10%;
+    top:90px;
+    width: 50%;
+    font-size: 14px;
+    font-family: monospace;
+    line-height: 2em;
+
+}
 .contact {
     min-height: 256px;
     background-color: rgb(24, 24, 24);
     font-size: 12px;
     color: white;
 }
+.contact h1 {
+    position: relative;
+    display: block;
+    margin: 12px;
+    top:20px;
+    left: 10%;
+    font-size: 34px;
+    text-align: left;
+}
+.contact p {
+    position: relative;
+    display: block;
+    margin: 12px;
+    top:20px;
+    left: 10%;
+    font-size: 16px;
+    text-align: left;
+    font-family: monospace;
+
+}
 footer{
+    position: relative;
     text-align: center;
     padding: 50px;
+    top: 15px;
     color: white;
     background-color: rgb(34, 34, 34);
-    position: relative;
     font-size: 9px;
     font-family: monospace;
 }
