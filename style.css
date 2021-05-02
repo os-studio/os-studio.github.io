@@ -36,10 +36,13 @@ header h1 {
     background-color: blue;
     width: 256px;
     height: 256px;
+    
 
 }
 .imgContainer img {
+
     width: 100%;
+
 }
 /* .banner h2 {
     position: absolute;
@@ -57,11 +60,12 @@ nav ul {
     white-space: nowrap;
     max-width: 1200px;
     margin: 0px auto;
+    padding-inline-start: 0;
 }
 nav li {
     display: inline-block;
     width: 25%;
-    font-size: 12px;
+    font-size: 16px;
 }
 nav li a {
     text-decoration: none;
@@ -72,7 +76,7 @@ nav li a {
 nav li a:hover{
     background-color: white;
     color: black;
-    padding: 20px;
+    padding: 15px;
     border-radius: 12px;
 }
 main {
