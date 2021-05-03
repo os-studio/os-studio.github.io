@@ -3,8 +3,9 @@
 
 <head>
     <title>OS-Studio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" defer>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
@@ -18,11 +19,12 @@
 
     </section>
     <nav class="mainMenu">
+        <a id="home"></a>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <main>
@@ -33,17 +35,25 @@
             <div class="square"> </div>
         </section>
         <section class="works">
-            <p>work section</p>
+            <a id="works"></a>
+            <div id="imgContainer">
+                <p id="workText">work section</p>
+            </div>
         </section>
         <section class="about">
+            <a id="about"></a>
             <h1>Bio:</h1>
-            <p>Profesor de Bellas Artes y Programador, especializado en el dibujo y autodidacta en el uso de tecnología.
-                Su obra atraviesa el uso de conocimientos análogos y la utilización de nuevos medios para expresar su
-                visión a través de piezas digitales, las cuales combinan el uso del color, iluminación y animación.
+            <p>Profesor de Bellas Artes y Programador, especializado en el dibujo y autodidacta en el uso de
+                tecnología.
+                Su obra atraviesa el uso de conocimientos análogos y la utilización de nuevos medios para
+                expresar su
+                visión a través de piezas digitales, las cuales combinan el uso del color, iluminación y
+                animación.
             </p>
         </section>
         <section class="contact">
-            <h1>Contact:</h1>
+            <a id="contact"></a>
+            <h1 id="contact">Contact:</h1>
             <p>email:</p>
             <p><a href="">santiago.ocampomail@gmail.com</a></p>
             <p>social</p>

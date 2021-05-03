@@ -99,10 +99,34 @@ main {
 }
 
 .works {
-    min-height: 1024px;
+    min-height: 1248px;
     background-color: rgb(24, 24, 24);
     font-size: 12px;
     color: white;
+}
+#imgContainer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+#workText {
+    text-align: left;
+    font-size:42px;
+    margin:12px;
+    position:relative;
+    padding: 20px;
+    top:10px;
+    left:5%;
+    width:128px;
+}
+.workImg {
+    position: inherit;
+    min-height: 86px;
+    max-height: 360px;
+    padding: 0px;
+    margin: 6px;
+    border: 8px solid white ;
+
 }
 .about {
     min-height: 512px;
@@ -129,7 +153,7 @@ main {
     left: 10%;
     top:90px;
     width: 50%;
-    font-size: 14px;
+    font-size: 18px;
     font-family: monospace;
     line-height: 2em;
     
@@ -161,6 +185,9 @@ main {
     text-align: left;
     font-family: monospace;
 
+}
+.contact p a{
+    text-decoration: none;
 }
 footer{
     position: relative;
