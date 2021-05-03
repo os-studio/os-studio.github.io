@@ -16,4 +16,10 @@ for (let i = 0; i < srcArray.length; i++) {
 }
 workString = 'SOME OF MY WORK:'
 worktext.textContent = workString;
-var video;
+var video1 = document.getElementById('homeVideo1');
+var video2 = document.getElementById('homeVideo2');
+video1.loop = true;
+video1.play();
+video2.loop = true;
+video2.play();
+

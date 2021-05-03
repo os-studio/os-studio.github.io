@@ -86,11 +86,28 @@ main {
     color: white;
     text-align: left;
 }
+#vidContainer {
+    position: relative;
+    top: 128px;
+}
+#homeVideo1{
+    width: 50%;
+    opacity: 50%;
+    position: relative;
+
+}
+#homeVideo2{
+    float: right;
+    width: 50%;
+    opacity: 50%;
+    position: relative;
+
+}
 .homeText {
     position: relative;
     display: block;
     left: 10%;
-    top: 140px;
+    top: -360px;
     width: 50%;
     margin:12px;
     font-size: 64px;
@@ -188,6 +205,7 @@ main {
 }
 .contact p a{
     text-decoration: none;
+    color: grey;
 }
 footer{
     position: relative;
