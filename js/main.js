@@ -10,7 +10,7 @@ userInput(inputName);
 initImages();
 
 function init() {
-    formName = document.getElementById("formName");
+    $("#formName").val(inputName);
     userEmail = document.getElementById("mail");
     formName.addEventListener("input", validate, false);
     userEmail.addEventListener("input", validate, false);
