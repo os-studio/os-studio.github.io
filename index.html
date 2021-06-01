@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" defer>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <script src="./js/main.js" defer></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -63,6 +64,16 @@
             <p>social:</p>
             <p><a href="https://twitter.com/SantiagoOcampo">@SantiagoOcampo</a></p>
             <!-- <input type="email" name="email" placeholder="Type email & hit enter" required> -->
+            <button id="buttonContact"> Contact me for a comission</button>
+            <form name="contactForm" method="get" id="contactForm" action="#contact" onsubmit="return false">
+                <label>Who you are: </label>
+                <input type="text" name="formName" placeholder="Name/Nombre" id="formName" />
+                <label>Your mail: </label>
+                <input type="email" name="mail" id="mail" placeholder="example@mail.com" />
+                <label>Message: </label>
+                <input type="text" name="" placeholder="Tell me your idea" id="formMessage">
+                <button id="sendButton">Send</button>
+            </form>
 
         </section>
     </main>
@@ -70,8 +81,6 @@
     <footer>
         <p>Website Developed by<br>os-studio<br>2021</p>
     </footer>
-
-
 
 </body>
 
