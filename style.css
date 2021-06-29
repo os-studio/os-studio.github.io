@@ -1,221 +1,236 @@
-body {
-    background-color: black;
-    text-align: center;
-    font-family: 'Roboto';
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  background-color: black;
+  text-align: center;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
 }
 header {
-    position: fixed;
-    /* background-color:#FF5454; */
-    color: black;
-    padding: 0px;
-    margin: 0px;
-    text-align: left;
-    width: 100%;
-    z-index: 1;
-    top: 0px;
-    left: 0px;
+  position: fixed;
+  /* background-color:#FF5454; */
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+  width: 100%;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
 }
 header h1 {
-    background-color: black;
-    color: white;
-    left: 0;
-    top: 0;
-    padding: 30px;
-    margin-top: 0;
-    font-size: 2.5em;
-    /* display: inline-block; */
+  background-color: black;
+  color: white;
+  left: 0;
+  top: 0;
+  padding: 30px;
+  margin: 0;
+  font-size: 2.5em;
+
+  /* display: inline-block; */
 }
 .banner {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 .imgContainer {
-    max-width: 100%;
+  max-width: 100%;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: 250px;
 }
 .imgContainer img {
-
-    width: 128px;
-
+  width: 100%;
+  mix-blend-mode: lighten;
 }
 nav {
-    position: sticky;
-    background-color: rgb(34, 34, 34);
-    padding: 20px;
-    top: 108px;
-    z-index: 1;
+  position: sticky;
+  background-color: coral;
+  padding: 20px;
+  top: 108px;
+  z-index: 1;
 }
 nav ul {
-    white-space: nowrap;
-    max-width: 1200px;
-    margin: 0px auto;
-    padding-inline-start: 0;
+  white-space: nowrap;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-inline-start: 0;
 }
 nav li {
-    display: inline-block;
-    width: 25%;
-    font-size: 18px;
+  display: inline-block;
+  width: 15%;
+  font-size: 18px;
 }
 nav li a {
-    text-decoration: none;
-    color: white;
-    font-family: monospace;
-    font-size: 1em;
-    
+  text-decoration: none;
+  color: white;
+  font-family: Roboto;
+  font-size: 1em;
 }
-nav li a:hover{
-    background-color: white;
-    color: black;
-    padding: 15px;
-    border-radius: 12px;
+nav li a:hover {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin: 0px;
 }
 main {
-    max-width: 100%;
-    width: 1200px;
-    margin: 0px auto;
-    padding: 0 10px;
-    box-sizing: border-box;
+  max-width: 100%;
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .home {
-    /* position: relative; */
-    max-height: 1024px;
-    background-color: rgb(24, 24, 24);
-    font-size: 12px;
-    color: white;
-    text-align: left;
+  /* position: relative; */
+  max-height: 1450px;
+  background-color: rgb(0, 0, 0);
+  font-size: 12px;
+  color: white;
+  text-align: left;
 }
 #vidContainer {
-    position: relative;
-    top: 156px;
+  position: relative;
+  top: 150px;
+  width: 100%;
+  height: 100%;
 }
-#homeVideo1{
-    width: 50%;
-    opacity: 50%;
-    position: relative;
-
+#homeVideo1 {
+  width: 50%;
+  opacity: 50%;
+  position: relative;
 }
-#homeVideo2{
-    float: right;
-    width: 50%;
-    opacity: 50%;
-    position: relative;
-
+#homeVideo2 {
+  float: right;
+  width: 50%;
+  opacity: 50%;
+  position: relative;
+}
+#homeVideo3 {
+  float: right;
+  width: 50%;
+  opacity: 50%;
+  position: relative;
+}
+#homeVideo4 {
+  float: right;
+  width: 50%;
+  opacity: 50%;
+  position: relative;
 }
 .homeText {
-    position: relative;
-    display: block;
-    left: 10%;
-    top: -280px;
-    width: 60%;
-    margin:12px;
-    font-size: 46px;
-    font-weight: bolder;
-    color: rgb(255, 255, 255);
+  position: relative;
+  top: -880px;
+  margin: 12px;
+  font-size: 46px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
 }
 #userName {
-    color: coral;
+  position: relative;
+  top: -880px;
+  margin: 12px;
+  color: coral;
+  font-size: 46px;
 }
 .works {
-    min-height: 1248px;
-    background-color: rgb(24, 24, 24);
-    font-size: 12px;
-    color: white;
+  min-height: 1248px;
+  background-color: rgb(24, 24, 24);
+  font-size: 12px;
+  color: white;
 }
 #imgContainer {
-    position: relative;
-    width: 100%;
-    text-align: center;
+  position: relative;
+  width: 100%;
+  text-align: center;
 }
 #workText {
-    text-align: left;
-    font-size:42px;
-    margin:12px;
-    position:relative;
-    padding: 20px;
-    top:10px;
-    left:5%;
-    width:128px;
+  text-align: left;
+  font-size: 42px;
+  margin: 12px;
+  position: relative;
+  padding: 20px;
+  top: 10px;
+  left: 5%;
+  width: 128px;
 }
 .workImg {
-    position: inherit;
-    min-height: 86px;
-    max-height: 360px;
-    padding: 0px;
-    margin: 6px;
-    border: 8px solid white ;
-
+  position: inherit;
+  min-height: 86px;
+  max-height: 360px;
+  padding: 0px;
+  margin: 6px;
+  border: 8px solid white;
 }
 .about {
-    min-height: 512px;
-    background-color: rgb(24, 24, 24);
-    font-size: 12px;
-    color: white;
+  min-height: 512px;
+  background-color: rgb(24, 24, 24);
+  font-size: 12px;
+  color: white;
 }
-.about h1{
-    position: relative;
-    display: block;
-    margin: 12px;
-    top:60px;
-    left: 10%;
-    width: 120px;
-    font-size: 34px;
-    text-align: left;
-    
+.about h1 {
+  position: relative;
+  display: block;
+  margin: 12px;
+  top: 60px;
+  left: 10%;
+  width: 120px;
+  font-size: 34px;
+  text-align: left;
 }
 .about p {
-    text-align: left;
-    position: relative;
-    display: block;
-    margin: 12px;
-    left: 10%;
-    top:90px;
-    width: 70%;
-    font-size: 16px;
-    font-family: monospace;
-    line-height: 2em;
-    
-
+  text-align: left;
+  position: relative;
+  display: block;
+  margin: 12px;
+  left: 10%;
+  top: 90px;
+  width: 70%;
+  font-size: 16px;
+  font-family: monospace;
+  line-height: 2em;
 }
 .contact {
-    min-height: 256px;
-    background-color: rgb(24, 24, 24);
-    font-size: 12px;
-    color: white;
+  min-height: 256px;
+  background-color: rgb(24, 24, 24);
+  font-size: 12px;
+  color: white;
 }
 .contact h1 {
-    position: relative;
-    display: block;
-    margin: 12px;
-    top:20px;
-    left: 10%;
-    width: 120px;
-    font-size: 34px;
-    text-align: left;
+  position: relative;
+  display: block;
+  margin: 12px;
+  top: 20px;
+  left: 10%;
+  width: 120px;
+  font-size: 34px;
+  text-align: left;
 }
 .contact p {
-    position: relative;
-    margin: 12px;
-    width: 120px;
-    top:20px;
-    left: 10%;
-    font-size: 16px;
-    text-align: left;
-    font-family: monospace;
-
+  position: relative;
+  margin: 12px;
+  width: 120px;
+  top: 20px;
+  left: 10%;
+  font-size: 16px;
+  text-align: left;
+  font-family: monospace;
 }
-.contact p a{
-    text-decoration: none;
-    color: grey;
+.contact p a {
+  text-decoration: none;
+  color: grey;
 }
-footer{
-    position: relative;
-    text-align: center;
-    padding: 50px;
-    top: 15px;
-    color: white;
-    background-color: rgb(34, 34, 34);
-    font-size: 9px;
-    font-family: monospace;
+footer {
+  position: relative;
+  text-align: center;
+  padding: 50px;
+  top: 15px;
+  color: white;
+  background-color: rgb(34, 34, 34);
+  font-size: 9px;
+  font-family: monospace;
 }
