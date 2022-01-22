@@ -179,7 +179,7 @@ main {
   height: 2000px;
 }
 #realTimeContainer {
-  background-color: lawngreen;
+  /* background-color: lawngreen; */
   width: 70%;
   height: 512px;
   position: relative;
@@ -200,6 +200,10 @@ main {
   top: 10px;
   left: 5%;
   width: 50%;
+}
+#about {
+  position: relative;
+  top: -100px;
 }
 .about {
   min-height: 1024px;
