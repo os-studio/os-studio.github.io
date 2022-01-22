@@ -106,10 +106,10 @@ main {
   font-size: 1.6vw;
 }
 #vidContainer {
-  position: absolute;
-  top: 100%;
+  position: relative;
+  top: 0px;
   width: 100%;
-  height: 100%;
+  height: 800px;
 }
 #homeVideo1 {
   width: 35%;
@@ -176,12 +176,21 @@ main {
   color: white;
   position: relative;
   top: 90px;
+  height: 2000px;
 }
-#imgContainer {
+#realTimeContainer {
+  background-color: lawngreen;
+  width: 70%;
+  height: 512px;
+  position: relative;
+  margin: 0 auto;
+
+}
+/* #imgContainer {
   position: relative;
   width: 100%;
   text-align: center;
-}
+} */
 #workText {
   text-align: left;
   font-size: 1.25vw;
@@ -262,4 +271,21 @@ footer {
   background-color: rgb(34, 34, 34);
   font-size: 9px;
   font-family: monospace;
+}
+canvas {
+  position: relative;
+  display: inline-block;
+  outline:0;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  /* disable on touch highlights of html elements, especially on mobile! */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

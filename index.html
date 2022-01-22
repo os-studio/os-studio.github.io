@@ -36,7 +36,7 @@
       </section>
       <section class="works">
         <a id="works"></a>
-        <div id="imgContainer">
+        
           <p id="workText">I Work with:</p>
           
         <p class="workText">Real-time 3D</p>
@@ -64,7 +64,10 @@
             muted="muted"
           ></video>
         </div>
+        <div id="realTimeContainer">
+          <canvas id="glcanvas" width="20vw" height="20vw" tabindex="1"></canvas>
         </div>
+        
       </section>
       <section class="about">
         <a id="about"></a>
@@ -84,43 +87,38 @@
         <p><a href="">santiago.ocampomail@gmail.com</a></p>
         <p>social:</p>
         <p><a href="https://twitter.com/SantiagoOcampo">@SantiagoOcampo</a></p>
-        <!-- <input type="email" name="email" placeholder="Type email & hit enter" required> -->
-        <!-- <button id="buttonContact">Contact me for a comission</button>
-        <form
-          name="contactForm"
-          method="get"
-          id="contactForm"
-          action="#contact"
-          onsubmit="return false"
-        >
-          <label>Who you are: </label>
-          <input
-            type="text"
-            name="formName"
-            placeholder="Name/Nombre"
-            id="formName"
-          />
-          <label>Your mail: </label>
-          <input
-            type="email"
-            name="mail"
-            id="mail"
-            placeholder="example@mail.com"
-          />
-          <label>Message: </label>
-          <input
-            type="text"
-            name=""
-            placeholder="Tell me your idea"
-            id="formMessage"
-          />
-          <button id="sendButton">Send</button>
-        </form> -->
+        
       </section>
     </main>
 
     <footer>
       <p>Website Developed by<br />ocampo santiago<br />2021</p>
     </footer>
+    <script type="text/javascript" src="js/patch.js" async></script>
+    <script>
+
+      // disable rubberband effect on mobile devices
+      document.getElementById('glcanvas').addEventListener('touchmove', (e)=>{ e.preventDefault(); }, false);
+
+
+      function patchInitialized(patch) {
+          // You can now access the patch object (patch), register variable watchers and so on
+      }
+
+      function patchFinishedLoading(patch) {
+          // The patch is ready now, all assets have been loaded
+      }
+
+      document.addEventListener('CABLES.jsLoaded', function (event) {
+          CABLES.patch = new CABLES.Patch({
+              patch: CABLES.exportedPatch,
+              prefixAssetPath: '',
+              glCanvasId: 'glcanvas',
+              glCanvasResizeToWindow: false,
+              onPatchLoaded: patchInitialized,
+              onFinishedLoading: patchFinishedLoading,
+          });
+      });
+  </script>
   </body>
 </html>
