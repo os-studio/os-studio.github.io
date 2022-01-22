@@ -3,139 +3,153 @@
 }
 body,
 html {
-  background-color: black;
+  background-color: rgb(128, 128, 128);
   text-align: center;
-  font-family: "Roboto";
+  font-family: "Poppins";
   margin: 0;
   padding: 0;
 }
 header {
   position: fixed;
-  /* background-color:#FF5454; */
-  color: black;
+  background-color:rgb(128, 128, 128);
+  /*color: rgb(55, 56, 51);*/
   padding: 0px;
   margin: 0px;
-  text-align: left;
+  /* text-align: left; */
   width: 100%;
   z-index: 1;
   top: 0px;
   left: 0px;
+  height: 100px;
 }
 header h1 {
-  background-color: black;
+  /* background-color: rgb(255, 0, 0); */
   color: white;
-  left: 0;
-  top: 0;
-  padding: 30px;
-  margin: 0;
-  font-size: 2.5em;
-
-  /* display: inline-block; */
-}
-.banner {
-  position: relative;
-  z-index: 1;
-}
-.imgContainer {
-  max-width: 100%;
-  width: 250px;
-  height: 250px;
-  position: relative;
-  top: 250px;
-}
-.imgContainer img {
-  width: 100%;
-  mix-blend-mode: lighten;
-}
-nav {
-  position: sticky;
-  background-color: coral;
+  left: -10%;
+  width: 50%;
   padding: 20px;
-  top: 108px;
+  margin: 0px;
+  font-size: 1.8em;
+  /* height: 75px; */
+  position: relative;
+}
+
+.mainMenu {
+  position: relative;
+  /* background-color: rgb(218, 203, 0); */
+  padding: 20px;
+  top: -75px;
+  width: 50%;
+  left:50%;
   z-index: 1;
+}
+.items{
+  top: 0px;
+  width: 100%;
 }
 nav ul {
   white-space: nowrap;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0px auto;
   padding-inline-start: 0;
 }
 nav li {
   display: inline-block;
-  width: 15%;
-  font-size: 18px;
+  width: 25%;
+  font-size: 1.6vw;
 }
 nav li a {
   text-decoration: none;
   color: white;
-  font-family: Roboto;
+  font-family: "Poppins";
   font-size: 1em;
 }
 nav li a:hover {
-  background-color: white;
+  background-color: rgb(224, 41, 41);
   color: black;
-  padding: 20px;
+  padding: 12px;
   margin: 0px;
 }
 main {
-  max-width: 100%;
-  width: 1200px;
+  max-width: 1280px;
   margin: 0px auto;
   padding: 0 10px;
   box-sizing: border-box;
+  /* background-color:rgb(44, 218, 0); */
+  
 }
 
 .home {
-  /* position: relative; */
-  max-height: 1450px;
-  background-color: rgb(0, 0, 0);
+  position: relative;
+  top: 105px;
+  max-height: 1024px;
+  /* background-color: rgb(0, 140, 255); */
   font-size: 12px;
-  color: white;
-  text-align: left;
+  /* color: rgb(0, 255, 76); */
+  /* text-align: left; */
+  padding: 0px;
+  margin: 20px auto;
+  min-height: 1024px;
+  
 }
 #vidContainer {
   position: relative;
-  top: 150px;
+  top: 0px;
   width: 100%;
   height: 100%;
 }
 #homeVideo1 {
   width: 50%;
-  opacity: 50%;
+  opacity: 100%;
   position: relative;
 }
 #homeVideo2 {
   float: right;
   width: 50%;
-  opacity: 50%;
+  opacity: 100%;
   position: relative;
 }
 #homeVideo3 {
   float: right;
   width: 50%;
-  opacity: 50%;
+  opacity: 100%;
   position: relative;
 }
 #homeVideo4 {
   float: right;
   width: 50%;
-  opacity: 50%;
+  opacity: 100%;
   position: relative;
 }
-.homeText {
+.workText {
   position: relative;
-  top: -880px;
+  top: 0px;
   margin: 12px;
-  font-size: 46px;
+  font-size: 64px;
   font-weight: bolder;
   color: rgb(255, 255, 255);
 }
-#userName {
+#myName {
   position: relative;
-  top: -880px;
-  margin: 12px;
-  color: coral;
-  font-size: 46px;
+  top:150px;
+  margin: 0px auto;
+  padding: 0px;
+  color: rgb(255, 255, 255);
+  /* font-size: clamp(8rem, -0.875rem + 8.333vw, 3.5rem); */
+  font-size: 12vw;
+  /* width: 1280px; */
+  font-weight: bold;
+  line-height: 100px;
+}
+#mySurname {
+  position: relative;
+  top:100px;
+  margin: 0px auto;
+  padding: 0px;
+  color: rgb(0, 0, 0);
+  font-size:15vw;
+  /* width: 1280px; */
+  font-weight: bold;
 }
 .works {
   min-height: 1248px;
@@ -150,13 +164,13 @@ main {
 }
 #workText {
   text-align: left;
-  font-size: 42px;
-  margin: 12px;
+  font-size: 1.25vw;
+  margin: 0px;
   position: relative;
   padding: 20px;
   top: 10px;
   left: 5%;
-  width: 128px;
+  width: 50%;
 }
 .workImg {
   position: inherit;
