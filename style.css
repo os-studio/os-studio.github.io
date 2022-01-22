@@ -92,32 +92,45 @@ main {
   min-height: 1024px;
   
 }
-#vidContainer {
+#line {
+  background-color: white;
   position: relative;
-  top: 0px;
+  width: 50%;
+  height: 1px;
+  top: 90px;
+  color: white;
+}
+#myTitle {
+  position: relative;
+  text-align: right;
+  font-size: 1.6vw;
+}
+#vidContainer {
+  position: absolute;
+  top: 100%;
   width: 100%;
   height: 100%;
 }
 #homeVideo1 {
-  width: 50%;
+  width: 35%;
   opacity: 100%;
   position: relative;
 }
 #homeVideo2 {
-  float: right;
-  width: 50%;
+  
+  width: 35%;
   opacity: 100%;
   position: relative;
 }
 #homeVideo3 {
-  float: right;
-  width: 50%;
+  
+  width: 35%;
   opacity: 100%;
   position: relative;
 }
 #homeVideo4 {
-  float: right;
-  width: 50%;
+  
+  width: 35%;
   opacity: 100%;
   position: relative;
 }
@@ -151,11 +164,18 @@ main {
   /* width: 1280px; */
   font-weight: bold;
 }
+#works {
+  position: relative;
+  top:-200px;
+}
 .works {
-  min-height: 1248px;
+  min-height: 1080px;
   background-color: rgb(24, 24, 24);
+  /* background-color: rgb(209, 0, 0); */
   font-size: 12px;
   color: white;
+  position: relative;
+  top: 90px;
 }
 #imgContainer {
   position: relative;
@@ -172,19 +192,13 @@ main {
   left: 5%;
   width: 50%;
 }
-.workImg {
-  position: inherit;
-  min-height: 86px;
-  max-height: 360px;
-  padding: 0px;
-  margin: 6px;
-  border: 8px solid white;
-}
 .about {
-  min-height: 512px;
+  min-height: 1024px;
   background-color: rgb(24, 24, 24);
   font-size: 12px;
   color: white;
+  position: relative;
+  top: 90px;
 }
 .about h1 {
   position: relative;
@@ -213,6 +227,7 @@ main {
   background-color: rgb(24, 24, 24);
   font-size: 12px;
   color: white;
+  position: relative;
 }
 .contact h1 {
   position: relative;
