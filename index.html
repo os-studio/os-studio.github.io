@@ -18,10 +18,10 @@
     <nav class="mainMenu">
       <a id="items"></a>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
     
@@ -37,12 +37,13 @@
       <section class="works">
         <a id="works"></a>
         
-          <p id="workText">I Work with:</p>
+          <p id="workText">I WORK WITH:</p>
           
         <p class="workText">Real-time 3D</p>
         <p class="workText">Interactive Projects</p>
         <p class="workText">& New Media Technologies</p>
         <div id="vidContainer">
+          <p>Real-time Animation</p>
           <video
             id="homeVideo1"
             src="./video/vfxGraph_01.mp4"
@@ -71,14 +72,35 @@
       </section>
       <section class="about">
         <a id="about"></a>
-        <h1>Bio:</h1>
-        <p>
+        <h1>BIO:</h1>
+        <p id="bioEng">
+          Professor of Fine Arts and Programmer, specialized in drawing and
+          self-taught in the use of technology. His work goes through the use of
+          similar knowledge and the use of new means to express
+          his vision through digital pieces, which combine the use of
+          color, lighting and animation.
+        </p>
+        <p id="bioEsp">
           Profesor de Bellas Artes y Programador, especializado en el dibujo y
           autodidacta en el uso de tecnología. Su obra atraviesa el uso de
           conocimientos análogos y la utilización de nuevos medios para expresar
           su visión a través de piezas digitales, las cuales combinan el uso del
           color, iluminación y animación.
         </p>
+        <p id="skills">Skills</p>
+        <div id="skillContainer">
+          <ul id="skillList">
+            <li><div class="skillCircle">Unreal Engine</div></li>
+            <li><div class="skillCircle">Blender 3.0</div></li>
+            <li><div class="skillCircle">Javascript</div></li>
+            <li><div class="skillCircle">TouchDesigner</div></li>
+            <li><div class="skillCircle">Drawing</div></li>
+          </ul>
+        </div>
+        <div id="myTimelineContainer">
+          <div id="timeLine"></div>
+          <p id="timeLineText">MY TIMELINE</p>
+        </div>
       </section>
       <section class="contact">
         <a id="contact"></a>
@@ -94,31 +116,6 @@
     <footer>
       <p>Website Developed by<br />ocampo santiago<br />2021</p>
     </footer>
-    <!-- <script type="text/javascript" src="js/patch.js" async></script>
-    <script>
-
-      // disable rubberband effect on mobile devices
-      document.getElementById('glcanvas').addEventListener('touchmove', (e)=>{ e.preventDefault(); }, false);
-
-
-      function patchInitialized(patch) {
-          // You can now access the patch object (patch), register variable watchers and so on
-      }
-
-      function patchFinishedLoading(patch) {
-          // The patch is ready now, all assets have been loaded
-      }
-
-      document.addEventListener('CABLES.jsLoaded', function (event) {
-          CABLES.patch = new CABLES.Patch({
-              patch: CABLES.exportedPatch,
-              prefixAssetPath: '',
-              glCanvasId: 'glcanvas',
-              glCanvasResizeToWindow: false,
-              onPatchLoaded: patchInitialized,
-              onFinishedLoading: patchFinishedLoading,
-          });
-      });
-  </script> -->
+   
   </body>
 </html>
