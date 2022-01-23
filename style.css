@@ -104,6 +104,7 @@ main {
   position: relative;
   text-align: right;
   font-size: 1.6vw;
+  
 }
 #vidContainer {
   position: relative;
@@ -206,96 +207,79 @@ main {
   top: -100px;
 }
 .about {
-  min-height: 1624px;
+  min-height: 2424px;
   background-color: rgb(24, 24, 24);
   font-size: 12px;
   color: white;
   position: relative;
-  top: 80px;
+  top: 91px;
   height: 1824px;
   
 }
 .about h1 {
   position: relative;
-  display: block;
-  margin: 12px;
-  top: 60px;
-  left: 10%;
-  width: 120px;
-  font-size: 34px;
+  margin: 0 auto;
+  top: 0px;
+  width: 50%;
+  font-size: 2vw;
   text-align: left;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 #bioEng {
   text-align: right;
   position: relative;
-  display: block;
-  margin: 12px;
-  left: 25%;
-  top: 90px;
-  width: 50%;
+  margin: 0 auto;
+  left: 0;
+  top:0px;
+  width: 40%;
   font-size: 1.2vw;
   line-height: 2em;
+  padding-top: 60px;
+  padding-bottom: 15px;
 }
 #bioEsp {
   text-align: right;
   position: relative;
-  display: block;
-  margin: 12px;
-  left: 25%;
-  top: 90px;
-  width: 50%;
+  margin: 0 auto;
+  left: 0;
+  top:0px;
+  width: 40%;
   font-size: 1.2vw;
   line-height: 2em;
+  padding-top: 60px;
+  padding-bottom: 15px;
   color: rgb(128, 128, 128);
 }
 #skills {
   position: relative;
-  top: 150px;
+  top: 0px;
   font-size: 2vw;
-  
 }
 #skillContainer {
-  /* background-color: rgb(224, 41, 41); */
-  width: 100%;
-  height: 300px;
+  /* background-color: rgb(112, 170, 73); */
+  height: 10%;
+  text-align: right;
+  margin: 0 auto;
   position: relative;
-  top: 150px;
   
 }
-#skillList {
-  position: relative;
-  list-style-type: none;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0;
-}
-#skillList li {
- /* background-color:khaki; */
- margin: 0 auto;
- padding: 0;
- text-align: right;
-}
-.skillCircle {
-  vertical-align: middle;  
-  border-radius: 100px;
+
+.skillCircle { 
   position: relative;
   color: rgb(224, 41, 41);
   font-weight: bold;
   font-family: 'Poppins';
-  width: 100%;
-  height: 100%;
   margin: 0 auto;
-  padding: 0;
-  font-size: 4vw;
-  left: -50%;
- 
+  width: 50%;
+  left: -25%;
+  font-size: 2vw;
+  line-height: 95%;
 }
 #myTimelineContainer {
   position: relative;
   height: 800px;
   /* background-color: blue; */
-  top: 200px;
   font-size: 2vw;
   text-align: left;
 }
@@ -308,32 +292,15 @@ main {
   padding: 0px;
 }
 .contact {
-  min-height: 256px;
   background-color: rgb(24, 24, 24);
-  font-size: 12px;
-  color: white;
   position: relative;
-  top: 70px;
+  top: 72px;
 }
 .contact h1 {
-  position: relative;
-  display: block;
-  margin: 12px;
-  top: 20px;
-  left: 10%;
-  width: 120px;
-  font-size: 34px;
-  text-align: left;
+
 }
 .contact p {
-  position: relative;
-  margin: 12px;
-  width: 120px;
-  top: 20px;
-  left: 10%;
-  font-size: 16px;
-  text-align: left;
-  font-family: monospace;
+  
 }
 .contact p a {
   text-decoration: none;
@@ -349,13 +316,6 @@ footer {
   font-size: 9px;
   font-family: monospace;
 }
-canvas {
-  position: relative;
-  display: inline-block;
-  outline:0;
-  width: 100%;
-  height: 100%;
-}
 
 * {
   /* disable on touch highlights of html elements, especially on mobile! */
@@ -365,4 +325,10 @@ canvas {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+/* MOBILE STYLING & FIXES */
+@media (max-width: 676px) {
+  .skillCircle{
+    font-size: 4vw;
+  }
 }
