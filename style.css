@@ -11,7 +11,7 @@ html {
 }
 header {
   position: fixed;
-  background-color:rgb(128, 128, 128);
+  background-color: rgb(128, 128, 128);
   /*color: rgb(55, 56, 51);*/
   padding: 0px;
   margin: 0px;
@@ -40,10 +40,10 @@ header h1 {
   padding: 20px;
   top: -75px;
   width: 50%;
-  left:50%;
+  left: 50%;
   z-index: 1;
 }
-.items{
+.items {
   top: 0px;
   width: 100%;
 }
@@ -76,7 +76,6 @@ main {
   padding: 0 10px;
   box-sizing: border-box;
   /* background-color:rgb(44, 218, 0); */
-  
 }
 
 .home {
@@ -90,7 +89,6 @@ main {
   padding: 0px;
   margin: 20px auto;
   min-height: 1024px;
-  
 }
 #line {
   background-color: white;
@@ -104,7 +102,6 @@ main {
   position: relative;
   text-align: right;
   font-size: 1.6vw;
-  
 }
 #vidContainer {
   position: relative;
@@ -118,19 +115,16 @@ main {
   position: relative;
 }
 #homeVideo2 {
-  
   width: 35%;
   opacity: 100%;
   position: relative;
 }
 #homeVideo3 {
-  
   width: 35%;
   opacity: 100%;
   position: relative;
 }
 #homeVideo4 {
-  
   width: 35%;
   opacity: 100%;
   position: relative;
@@ -145,7 +139,7 @@ main {
 }
 #myName {
   position: relative;
-  top:150px;
+  top: 150px;
   margin: 0px auto;
   padding: 0px;
   color: rgb(255, 255, 255);
@@ -157,17 +151,17 @@ main {
 }
 #mySurname {
   position: relative;
-  top:100px;
+  top: 100px;
   margin: 0px auto;
   padding: 0px;
   color: rgb(0, 0, 0);
-  font-size:15vw;
+  font-size: 15vw;
   /* width: 1280px; */
   font-weight: bold;
 }
 #works {
   position: relative;
-  top:-200px;
+  top: -200px;
 }
 .works {
   min-height: 1080px;
@@ -185,7 +179,6 @@ main {
   height: 512px;
   position: relative;
   margin: 0 auto;
-
 }
 /* #imgContainer {
   position: relative;
@@ -214,36 +207,50 @@ main {
   position: relative;
   top: 91px;
   height: 1824px;
-  
+  font-weight: bold;
 }
 .about h1 {
-  position: relative;
-  margin: 0 auto;
-  top: 0px;
-  width: 50%;
-  font-size: 2vw;
   text-align: left;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  font-size: 1.25vw;
+  margin: 0px;
+  position: relative;
+  padding: 20px;
+  top: 10px;
+  left: 5%;
+  width: 50%;
 }
+#myselfImg {
+  width: 40%;
+  height: 0%;
+  left: 5%;
+  top: 15px;
+  position: relative;
+}
+#myselfImg img {
+  width: 100%;
+  height: auto;
+  mix-blend-mode: difference;
+  z-index: 100;
+}
+
 #bioEng {
   text-align: right;
   position: relative;
   margin: 0 auto;
-  left: 0;
-  top:0px;
+  left: 25%;
+  top: 0px;
   width: 40%;
   font-size: 1.2vw;
   line-height: 2em;
-  padding-top: 60px;
+  padding-top: 10px;
   padding-bottom: 15px;
 }
 #bioEsp {
   text-align: right;
   position: relative;
   margin: 0 auto;
-  left: 0;
-  top:0px;
+  left: 25%;
+  top: -50px;
   width: 40%;
   font-size: 1.2vw;
   line-height: 2em;
@@ -253,28 +260,29 @@ main {
 }
 #skills {
   position: relative;
-  top: 0px;
-  font-size: 2vw;
+  top: 70px;
+  font-size: 1.2vw;
 }
 #skillContainer {
   /* background-color: rgb(112, 170, 73); */
-  height: 10%;
+  height: auto;
   text-align: right;
   margin: 0 auto;
   position: relative;
-  
+  top: 2.5%;
 }
 
-.skillCircle { 
+.skillCircle {
   position: relative;
   color: rgb(224, 41, 41);
   font-weight: bold;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   margin: 0 auto;
   width: 50%;
   left: -25%;
-  font-size: 2vw;
+  font-size: 3.5vw;
   line-height: 95%;
+  padding: 20px;
 }
 #myTimelineContainer {
   position: relative;
@@ -282,35 +290,59 @@ main {
   /* background-color: blue; */
   font-size: 2vw;
   text-align: left;
+  top: 70px;
 }
-#timeLineText{
-  position: relative;
-  left: 10%;
-  width: 200px;
-  height: auto;
+#timeLineText {
+  text-align: left;
+  font-size: 1.25vw;
   margin: 0px;
-  padding: 0px;
+  position: relative;
+  padding: 20px;
+  top: 10px;
+  left: 5%;
+  width: 50%;
 }
 .contact {
   background-color: rgb(24, 24, 24);
   position: relative;
-  top: 72px;
+  top: 50px;
+  color: white;
+  height: 824px;
+  /* background-color: aqua; */
 }
 .contact h1 {
-
+  text-align: left;
+  font-size: 1.25vw;
+  margin: 0px;
+  position: relative;
+  padding: 10px;
+  top: 180px;
+  left: 5%;
+  width: 50%;
 }
 .contact p {
-  
+  text-align: left;
+  font-size: 1.25vw;
+  margin: 0px;
+  position: relative;
+  padding: 10px;
+  top: 180px;
+  left: 5%;
+  width: 50%;
+  line-height: 15px;
 }
 .contact p a {
   text-decoration: none;
   color: grey;
+  font-size: 2.5vw;
+  font-weight: bolder;
 }
 footer {
+  margin: 0 auto;
   position: relative;
   text-align: center;
   padding: 50px;
-  top: 15px;
+  top: 50px;
   color: white;
   background-color: rgb(34, 34, 34);
   font-size: 9px;
@@ -328,7 +360,7 @@ footer {
 }
 /* MOBILE STYLING & FIXES */
 @media (max-width: 676px) {
-  .skillCircle{
+  .skillCircle {
     font-size: 4vw;
   }
 }
