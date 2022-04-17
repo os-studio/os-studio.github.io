@@ -371,7 +371,7 @@ footer {
     position: relative;
     /* margin: 0 auto; */
     top:0px;
-    left: 0.5%;
+    left: 5%;
     
   }
   #homeVideo1 {
@@ -396,6 +396,6 @@ footer {
   }
   canvas {
     height: 370px;
-    width: 370px;
+    width: 738px;
   }
 }
