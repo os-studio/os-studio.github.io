@@ -175,10 +175,12 @@ main {
 }
 #realTimeContainer {
   /* background-color: lawngreen; */
-  width: 70%;
-  height: 512px;
+  width: 440px;
+  /* height: 1024px; */
   position: relative;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  top: 0px;
+  left: 15%;
 }
 /* #imgContainer {
   position: relative;
@@ -362,5 +364,15 @@ footer {
 @media (max-width: 676px) {
   .skillCircle {
     font-size: 4vw;
+  }
+  #realTimeContainer {
+    background-color: lawngreen;
+    width: 256px;
+    height: 256px;
+    position: relative;
+    /* margin: 0 auto; */
+    top:0px;
+    /* left: 15%; */
+    
   }
 }
