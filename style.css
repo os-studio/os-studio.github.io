@@ -182,6 +182,10 @@ main {
   top: 0px;
   left: 15%;
 }
+canvas {
+  height: 470px;
+  width: 885px;
+}
 /* #imgContainer {
   position: relative;
   width: 100%;
