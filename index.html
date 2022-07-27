@@ -99,14 +99,26 @@
             <p class="skillCircle">Blender 3.X</p>
             <p class="skillCircle">Virtual Reality</p>
             <p class="skillCircle">Javascript</p>
-            <p class="skillCircle">Cables.gl</p>
+            <p class="skillCircle">WebGL</p>
             <p class="skillCircle">NFT Art</p>
             <p class="skillCircle">Digital Painting</p>
         </div>
         <div id="myTimelineContainer">
           <div id="timeLine"></div>
           <p id="timeLineText">/ MY TIMELINE:</p>
-          <div id="gd"></div>
+          <div id="timeContent">
+            <p class="timeText">----- Virtual Reality Art Experience for festival Sonar Buenos Aires - 2017
+            </p>
+            <p class="timeText">----- Programming for Interactive Marketing Installation Nike Argentina Retail / Mercurial Campaign - 2018.
+            </p>
+            <p class="timeText">----- Programming for Augmented Reality experience - Nike Argnetina Retail / World Cup - 2018
+            </p>
+            <p class="timeText">----- UI programming for Product Visualizer for Multi-Brand Sports Retail - 2018.</p>
+              <p class="timeText">----- Development and programming for Mixed Reality experience - Combining Mobile AR with VR for iOS - 2018.
+            </p>
+            <p class="timeText">----- UX and UI development and programming for multi touch displays Fundación Telefónica - CONECTADOS - 2019.
+            </p>
+          </div>
         </div>
       </section>
       <section class="contact">
@@ -126,34 +138,7 @@
     <footer>
       <p>Website Developed by<br />Ocampo Santiago<br />2021</p>
     </footer>
-    <script type="text/javascript" src="js/cables_footprint/js/patch.js" async></script>
-    <script>
-  
-      // disable rubberband effect on mobile devices
-      document.getElementById('glcanvasFootprint').addEventListener('touchmove', (e)=>{ e.preventDefault(); }, false);
-  
-  
-      function patchInitialized(patch) {
-          // You can now access the patch object (patch), register variable watchers and so on
-      }
-  
-      function patchFinishedLoading(patch) {
-          // The patch is ready now, all assets have been loaded
-      }
-  
-      document.addEventListener('CABLES.jsLoaded', function (event) {
-          CABLES.patch = new CABLES.Patch({
-              patch: CABLES.exportedPatch,
-              "prefixAssetPath": "",
-              "glCanvasId": "glcanvasFootprint",
-              "glCanvasResizeToWindow": false,
-              "onPatchLoaded": patchInitialized,
-              "onFinishedLoading": patchFinishedLoading,
-              // "canvas":{"alpha":true,"premultipliedAlpha":true} // make canvas transparent
-          });
-      });
-  </script>
-  
+    
     <script type="text/javascript" src="js/patch.js" async></script>
     <script>
 
