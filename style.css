@@ -159,6 +159,10 @@ main {
   /* width: 1280px; */
   font-weight: bold;
 }
+#myPathc {
+  width: 512px;
+  height: 512px;
+}
 #works {
   position: relative;
   top: -200px;
@@ -175,16 +179,16 @@ main {
 }
 #realTimeContainer {
   /* background-color: lawngreen; */
-  width: 440px;
+  width: 46vw;
   /* height: 1024px; */
   position: relative;
   /* margin: 0 auto; */
   top: 0px;
   left: 15%;
 }
-canvas {
-  height: 470px;
-  width: 885px;
+#glcanvas {
+  height: 40vh;
+  width: 46vw;
 }
 /* #imgContainer {
   position: relative;
@@ -286,7 +290,7 @@ canvas {
   margin: 0 auto;
   width: 50%;
   left: -25%;
-  font-size: 3.5vw;
+  font-size: 3vw;
   line-height: 95%;
   padding: 20px;
 }

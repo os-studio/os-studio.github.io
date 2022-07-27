@@ -28,11 +28,14 @@
   </header>
     <main>
       <section class="home" id="homeSection">
+        <!-- <div id="myPatch">
+          <canvas id="glcanvasFootprint" width="512" height="512" tabindex="1"></canvas>
+        </div> -->
         <p id="myName">SANTIAGO</p>
         <p id="mySurname">OCAMPO</p>
         <div id="line">
           <p id="myTitle"></p>
-        </pdiv>
+        
       </section>
       <section class="works">
         <a id="works"></a>
@@ -88,16 +91,17 @@
           Profesor de Bellas Artes y Programador, especializado en el dibujo y
           autodidacta en el uso de tecnología. Su obra atraviesa el uso de
           conocimientos análogos y la utilización de nuevos medios para expresar
-          su visión a través de piezas digitales, las cuales combinan el uso del
-          color, iluminación y animación.
+          su visión a través de piezas digitales, las cuales combinan color, iluminación y animación.
         </p>
         <p id="skills">/ SKILLS:</p>
         <div id="skillContainer">
             <p class="skillCircle">Unreal Engine 4</p>
-            <p class="skillCircle">Blender 3.0</p>
+            <p class="skillCircle">Blender 3.X</p>
+            <p class="skillCircle">Virtual Reality</p>
             <p class="skillCircle">Javascript</p>
-            <p class="skillCircle">TouchDesigner</p>
-            <p class="skillCircle">Drawing/Digital Paint</p>
+            <p class="skillCircle">Cables.gl</p>
+            <p class="skillCircle">NFT Art</p>
+            <p class="skillCircle">Digital Painting</p>
         </div>
         <div id="myTimelineContainer">
           <div id="timeLine"></div>
@@ -119,6 +123,34 @@
     <footer>
       <p>Website Developed by<br />Ocampo Santiago<br />2021</p>
     </footer>
+    <script type="text/javascript" src="js/cables_footprint/js/patch.js" async></script>
+    <script>
+  
+      // disable rubberband effect on mobile devices
+      document.getElementById('glcanvasFootprint').addEventListener('touchmove', (e)=>{ e.preventDefault(); }, false);
+  
+  
+      function patchInitialized(patch) {
+          // You can now access the patch object (patch), register variable watchers and so on
+      }
+  
+      function patchFinishedLoading(patch) {
+          // The patch is ready now, all assets have been loaded
+      }
+  
+      document.addEventListener('CABLES.jsLoaded', function (event) {
+          CABLES.patch = new CABLES.Patch({
+              patch: CABLES.exportedPatch,
+              "prefixAssetPath": "",
+              "glCanvasId": "glcanvasFootprint",
+              "glCanvasResizeToWindow": false,
+              "onPatchLoaded": patchInitialized,
+              "onFinishedLoading": patchFinishedLoading,
+              // "canvas":{"alpha":true,"premultipliedAlpha":true} // make canvas transparent
+          });
+      });
+  </script>
+  
     <script type="text/javascript" src="js/patch.js" async></script>
     <script>
 
@@ -146,6 +178,7 @@
           });
       });
   </script>
+
    
   </body>
 </html>
