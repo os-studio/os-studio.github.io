@@ -370,7 +370,7 @@ footer {
   position: relative;
   text-align: center;
   padding: 50px;
-  top: 50px;
+  top: 0px;
   color: white;
   background-color: rgb(34, 34, 34);
   font-size: 9px;
@@ -389,6 +389,17 @@ footer {
 /* MOBILE STYLING & FIXES */
 @media (max-width: 1000px) {
   .skillCircle {
+    font-size: 4vw;
+  }
+  #skills {
+    font-size: 4vw;
+
+  }
+  #timeLineText {
+    font-size: 4vw;
+
+  }
+  .about h1 {
     font-size: 4vw;
   }
   #workText {
@@ -431,6 +442,17 @@ footer {
   }
   #bioEsp {
     font-size: 2vw;
+  }
+  .timeText {
+    position: relative;
+    font-size: 2vw;
+    width: 100%;
+    height: 15vh;
+    line-height: 5vh;
+    left: 60px;
+    text-align: right;
+    left: 0px;
+    /* background-color: aquamarine; */
   }
 
 }
