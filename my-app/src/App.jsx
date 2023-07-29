@@ -33,6 +33,8 @@ function MyHome (){
     <>
       <div className='containerHome'>
         <h1>OCAMPO SANTIAGO</h1>
+        <div className='lightGrey'></div>
+        <div className='darkGrey'></div>
       </div>
     
     </>
