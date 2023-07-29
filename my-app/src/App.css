@@ -1,42 +1,87 @@
 #root {
-  max-width: 1280px;
+  
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0px;
+  text-align: center;
+  
+}
+body,html {
+  background-color: #262626;
+  margin: 0 auto;
+  font-family: "Roboto";
+  padding: 0;
+  height: 1024*3;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  height: 512px;
+}
+.os {
+  flex-grow: 1;
+  text-align: left;
+  width: 100px;
+  margin: 32px;
+}
+.containerNav{
+  width: 100%;
+  height: 64px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  color: white;
+  background-color: black;
+  position: fixed;
+  z-index: 1;
+}
+.buttonNav {
+  width: 100px;
+  text-align: center;
+  padding: 12px;
+}
+.buttonNav a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto";
+  font-size: .7rem;
+}
+.containerContent {
+  width: 100%;
+  top: 64px;
+  position: relative;
+  margin:0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerHome {
+  background-color: goldenrod;
+  height: 1024px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.containerWork {
+  background-color: violet;
+  height: 1024px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.containerAbout {
+  background-color: rebeccapurple;
+  height: 1024px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.containerContact {
+  background-color: navajowhite;
+  height: 1024px;
+  width: 100%;
+  position: relative;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

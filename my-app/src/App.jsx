@@ -1,33 +1,67 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='containerContent'>
+      <NavBar />
+      <MyHome />
+      <MyWork />
+      <MyAbout />
+      <MyContact />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+    </>
+  )
+}
+function NavBar () {
+  return (
+    <>
+ <nav className="containerNav">
+      <div className='os'>_OS</div>
+      <div className='buttonNav'><a href="#">Home</a></div>
+      <div className='buttonNav'><a href="#">Work</a></div>
+      <div className='buttonNav'><a href="#">About</a></div>
+      <div className='buttonNav'><a href="#">Contact</a></div>
+    </nav>
+    </>
+  )
+}
+function MyHome (){
+  return(
+    <>
+      <div className='containerHome'>
+        <h1>OCAMPO SANTIAGO</h1>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    
+    </>
+  )
+}
+function MyWork (){
+  return(
+    <>
+      <div className='containerWork'>
+        <h1>Work</h1>
+      </div>
+    </>
+  )
+}
+function MyAbout (){
+  return(
+    <>
+      <div className='containerAbout'>
+        <h1>About</h1>
+      </div>
+    </>
+  )
+}
+function MyContact (){
+  return(
+    <>
+      <div className='containerContact'>
+        <h1>Contact</h1>
+      </div>
     </>
   )
 }
