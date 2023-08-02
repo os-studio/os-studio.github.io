@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'MonoBold';
+  src: url('./src/fonts/RobotoMono-Bold.ttf')format('truetype');
+  font-family: 'MonoRegular';
+  src: url('./src/fonts/RobotoMono-Regular.ttf')format('truetype');
+  font-family: 'MonoThin';
+  src: url('./src/fonts/RobotoMono-Thin.ttf')format('truetype');
+}
 #root {
   
   margin: 0 auto;
@@ -8,19 +16,24 @@
 body,html {
   background-color: #262626;
   margin: 0 auto;
-  font-family: "Roboto";
+  font-family: "MonoRegular";
   padding: 0;
-  height: 1024*3;
+  height: 100%;
 }
 h1 {
   margin: 0;
   padding: 0;
+  width: 100px;
 }
 .os {
-  flex-grow: 1;
-  text-align: left;
+  text-align: center;
   width: 100px;
-  margin: 32px;
+  margin: 60px;
+}
+.buttonNav{
+  text-align: center;
+  width: 100px;
+  margin: 60px;
 }
 .containerNav{
   width: 100%;
@@ -28,91 +41,10 @@ h1 {
   top: 0px;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: space-evenly;
   color: white;
   background-color: black;
   position: fixed;
   z-index: 1;
-}
-.buttonNav {
-  width: 100px;
-  text-align: center;
-  padding: 12px;
-}
-.buttonNav a {
-  text-decoration: none;
-  color: white;
-  font-family: "Roboto";
-  font-size: .7rem;
-}
-.containerContent {
-  width: 100%;
-  top: 64px;
-  position: relative;
-  margin:0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.containerHome {
-  background-color: goldenrod;
-  height: 1024px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.containerHome h1 {
-  background-color: #E34725;
-  width: 35vw;
-  height: 128px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 3.5vw;
-}
-.lightGrey {
-  background-color:#838383 ;
-  height: 128px;
-  width: 25vw;
-  
-}
-.darkGrey {
-  background-color:#2F2F2F ;
-  height: 128px;
-  width: 12vw;
-}
-.containerWork {
-  background-color: violet;
-  height: 1024px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.containerAbout {
-  background-color: rebeccapurple;
-  height: 1024px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.containerContact {
-  background-color: navajowhite;
-  height: 1024px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
