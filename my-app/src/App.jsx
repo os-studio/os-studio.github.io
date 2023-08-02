@@ -5,10 +5,10 @@ function App() {
 
   return (
     <>
-    <div className='containerContent'>
+
       <NavBar />
       <MyHome />
-      </div>
+
     </>
   )
 }
@@ -28,9 +28,28 @@ function MyHome (){
   return(
     <>
       <div className='containerHome'>
-        <h1>OCAMPO SANTIAGO</h1>
-        <div className='lightGrey'></div>
-        <div className='darkGrey'></div>
+        <div className='containerSkillsContact'>
+        <div className='skills'>SFOTWARE & SKILLS:<br/>
+          Blender 3.X,<br/>
+          Unreal Engine 4,<br/>
+          Virtual Reality,<br/>
+          JavaScript,<br/>
+          WebGL,<br/>
+          TOUCH DESIGNER,<br/>
+          REACT-Three-fiber
+        </div>
+        <div className='contact'>CONTACT:<br/>
+            santiago.ocampomail@gmail.com,<br/>
+            @santiagoocampo
+        </div>
+        </div>
+        <div className='containerName'>
+        <div>SANTIAGO OCAMPO</div>
+        <div className='containerPathLoc'>
+          Visual Artist, 3D Generalist, Creative Coder<br/>
+Buenos aires, CABA, Argentina</div>
+        </div>
+        
       </div>
     
     </>
