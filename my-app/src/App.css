@@ -140,3 +140,8 @@ video {
   left: 0;
 }
 
+@media screen and (max-width: 600px) {
+  .containerName{
+    font-size: 2.8rem;
+  }
+}
