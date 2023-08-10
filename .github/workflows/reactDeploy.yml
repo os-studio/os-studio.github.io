@@ -39,6 +39,7 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
+          cache-dependency-path: './my-app/package-lock.json'
       - name: Sarasa 
         run: ls -la
       - name: Install dependencies
