@@ -1,6 +1,10 @@
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
+defaults:
+  run:
+    working-directory: ./my-app
+
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -35,7 +39,8 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
-        working-directory: ./my-app
+      - name: Sarasa 
+        uses: ls -la
       - name: Install dependencies
         run: npm install
         working-directory: ./my-app
