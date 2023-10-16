@@ -2,14 +2,15 @@ import { useState } from 'react'
 import * as THREE from "three"
 import './App.css'
 import { Canvas, useFrame, useThree  } from '@react-three/fiber'
-import {Environment, useTexture} from '@react-three/drei'
+import {Environment, useTexture,MeshTransmissionMaterial} from '@react-three/drei'
 import { Physics, useSphere } from "@react-three/cannon"
 import { EffectComposer, N8AO, SMAA } from "@react-three/postprocessing"
   
   
 const rfs = THREE.MathUtils.randFloatSpread
-const sphereGeometry = new THREE.SphereGeometry(1, 32, 32)
-const baubleMaterial = new THREE.MeshStandardMaterial({ color: "white", roughness: 0, envMapIntensity: 1 })
+//const sphereGeometry = new THREE.SphereGeometry(.75, 26, 26)
+const cubeGeometry = new THREE.BoxGeometry(1.4,1.4,1.4)
+const baubleMaterial = new THREE.MeshStandardMaterial({ color: "white", roughness: .35, envMapIntensity: 1 })
 
 function App() {
   
@@ -39,10 +40,10 @@ function NavBar () {
 }
 function MyHome (){
   function Clump({ mat = new THREE.Matrix4(), vec = new THREE.Vector3(), ...props }) {
-    //const texture = useTexture("/cross.jpg")
-    const [ref, api] = useSphere(() => ({ args: [1], mass: 1, angularDamping: 0.1, linearDamping: 0.65, position: [rfs(20), rfs(20), rfs(20)] }))
+    const texture = useTexture("./src/assets/arrow.png")
+    const [ref, api] = useSphere(() => ({ args: [1.25], mass: 1, angularDamping: 0.1, linearDamping: 0.65, position: [rfs(20), rfs(20), rfs(20)] }))
     useFrame((state) => {
-      for (let i = 0; i < 40; i++) {
+      for (let i = 0; i < 24; i++) {
         // Get current whereabouts of the instanced sphere
         ref.current.getMatrixAt(i, mat)
         // Normalize the position and multiply by a negative force.
@@ -50,28 +51,32 @@ function MyHome (){
         api.at(i).applyForce(vec.setFromMatrixPosition(mat).normalize().multiplyScalar(-40).toArray(), [0, 0, 0])
       }
     })
-    return <instancedMesh ref={ref} castShadow receiveShadow args={[null, null, 40]} geometry={sphereGeometry} material={baubleMaterial} />
+    return <instancedMesh ref={ref} castShadow receiveShadow args={[cubeGeometry,baubleMaterial,24]} material-map={texture}>
+          <boxGeometry args={[1,1,1,6,6,6]}></boxGeometry>
+        
+        </instancedMesh>
+    
   }
   
   function Pointer() {
     const viewport = useThree((state) => state.viewport)
-    const [, api] = useSphere(() => ({ type: "Kinematic", args: [3], position: [0, 0, 0] }))
+    const [, api] = useSphere(() => ({ type: "Kinematic", args: [1.7], position: [0, 0, 0] }))
     return useFrame((state) => api.position.set((state.mouse.x * viewport.width) / 2, (state.mouse.y * viewport.height) / 2, 0))
   }
   return(
     <>
     
     <div className='containerCanvas'>
-    <Canvas shadows gl={{ antialias: false }} dpr={[1, 1.5]} camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 40 }}>
+    <Canvas shadows gl={{ antialias: false }} dpr={[1, 1.5]} camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 40 }} >
       <ambientLight intensity={0.5} />
-      
       <spotLight intensity={1} angle={0.2} penumbra={1} position={[30, 30, 30]} castShadow shadow-mapSize={[512, 512]} />
       <Physics gravity={[0, 2, 0]} iterations={10}>
         <Pointer />
         <Clump />
       </Physics>
+      <Environment files="./src/assets/adamsbridge.hdr" />
       <EffectComposer disableNormalPass multisampling={0}>
-        <N8AO halfRes color="black" aoRadius={2} intensity={1} aoSamples={6} denoiseSamples={4} />
+        <N8AO halfRes color="black" aoRadius={2} intensity={1.25} aoSamples={4} denoiseSamples={2} />
         <SMAA />
       </EffectComposer>
     </Canvas>
