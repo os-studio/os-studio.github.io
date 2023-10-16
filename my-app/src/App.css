@@ -25,6 +25,7 @@ body,html {
   overflow: hidden;
 
 }
+
 .containerCanvas {
   position: absolute;
   height: 120%;
@@ -144,4 +145,7 @@ video {
   .containerName{
     font-size: 2.8rem;
   }
+}
+.ball {
+  color: #a7a1d1;
 }
