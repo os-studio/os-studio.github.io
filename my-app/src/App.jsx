@@ -40,7 +40,7 @@ function NavBar () {
 }
 function MyHome (){
   function Clump({ mat = new THREE.Matrix4(), vec = new THREE.Vector3(), ...props }) {
-    const texture = useTexture("./src/assets/arrow.png")
+    const texture = useTexture("../src/assets/arrow.png")
     const [ref, api] = useSphere(() => ({ args: [1.25], mass: 1, angularDamping: 0.1, linearDamping: 0.65, position: [rfs(20), rfs(20), rfs(20)] }))
     useFrame((state) => {
       for (let i = 0; i < 24; i++) {
@@ -74,7 +74,7 @@ function MyHome (){
         <Pointer />
         <Clump />
       </Physics>
-      <Environment files="./src/assets/adamsbridge.hdr" />
+      <Environment files="../src/assets/adamsbridge.hdr" />
       <EffectComposer disableNormalPass multisampling={0}>
         <N8AO halfRes color="black" aoRadius={2} intensity={1.25} aoSamples={4} denoiseSamples={2} />
         <SMAA />
