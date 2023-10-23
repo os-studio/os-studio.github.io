@@ -51,7 +51,7 @@ function MyHome (){
         api.at(i).applyForce(vec.setFromMatrixPosition(mat).normalize().multiplyScalar(-40).toArray(), [0, 0, 0])
       }
     })
-    return <instancedMesh ref={ref} castShadow receiveShadow args={[cubeGeometry,baubleMaterial,24]} material-map={texture}>
+    return <instancedMesh ref={ref} castShadow receiveShadow args={[cubeGeometry,baubleMaterial,24]}>
           <boxGeometry args={[1,1,1,6,6,6]}></boxGeometry>
         
         </instancedMesh>
@@ -69,14 +69,18 @@ function MyHome (){
     <div className='containerCanvas'>
     <Canvas shadows gl={{ antialias: false }} dpr={[1, 1.5]} camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 40 }} >
       <ambientLight intensity={0.5} />
-      <spotLight intensity={1} angle={0.2} penumbra={1} position={[30, 30, 30]} castShadow shadow-mapSize={[512, 512]} />
+      <spotLight intensity={1} angle={0.6} penumbra={1} position={[12, 4, 30]} castShadow shadow-mapSize={[512, 512]} />
+      <mesh receiveShadow position={[0,0,-9]}>
+        <meshStandardMaterial color={'#B2BABF'} />
+      <planeGeometry args={[32,32,1,1]} ></planeGeometry>
+      </mesh>
       <Physics gravity={[0, 2, 0]} iterations={10}>
         <Pointer />
         <Clump />
       </Physics>
       <Environment files="../src/assets/adamsbridge.hdr" />
       <EffectComposer disableNormalPass multisampling={0}>
-        <N8AO halfRes color="black" aoRadius={2} intensity={1.25} aoSamples={4} denoiseSamples={2} />
+        <N8AO halfRes color="black" aoRadius={.75} intensity={1.25} aoSamples={4} denoiseSamples={2} />
         <SMAA />
       </EffectComposer>
     </Canvas>
