@@ -78,7 +78,7 @@ function MyHome (){
         <Pointer />
         <Clump />
       </Physics>
-      <Environment files="../src/assets/adamsbridge.hdr" />
+      <Environment preset="city" />
       <EffectComposer disableNormalPass multisampling={0}>
         <N8AO halfRes color="black" aoRadius={.75} intensity={1.25} aoSamples={4} denoiseSamples={2} />
         <SMAA />
