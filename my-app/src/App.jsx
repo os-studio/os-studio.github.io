@@ -40,7 +40,7 @@ function NavBar () {
 }
 function MyHome (){
   function Clump({ mat = new THREE.Matrix4(), vec = new THREE.Vector3(), ...props }) {
-    //const texture = useTexture("../src/assets/arrow.png")
+      //const texture = useTexture("../src/assets/arrow.png")
     const [ref, api] = useSphere(() => ({ args: [1.25], mass: 1, angularDamping: 0.1, linearDamping: 0.65, position: [rfs(20), rfs(20), rfs(20)] }))
     useFrame((state) => {
       for (let i = 0; i < 24; i++) {
