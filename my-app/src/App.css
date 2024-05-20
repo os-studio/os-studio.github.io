@@ -22,8 +22,11 @@
 body,html {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 
+}
+canvas{
+  height: 100%;
 }
 
 .containerCanvas {
@@ -40,12 +43,12 @@ h1 {
 .os {
   text-align: left;
   width: 100px;
-  margin: 10px;
+  margin: 12px;
 }
 .buttonNav{
   text-align: center;
   width: 100px;
-  margin: 10px;
+  margin: 12px;
 }
 
 .containerNav{
@@ -71,6 +74,20 @@ h1 {
   padding: 0;
 
 }
+/* .containerSkillsContact{
+  height: 100vh;
+  width: 100%;
+  top: -64px;
+  position: relative;
+  display: flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  margin: 0;
+  padding: 0;
+  font-size: 0.7rem;
+  color: #504880;
+
+} */
 .containerSkillsContact{
   height: 100vh;
   width: 100%;
@@ -78,7 +95,7 @@ h1 {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items:flex-end;
+  align-items: flex-end;
   margin: 0;
   padding: 0;
   font-size: 0.7rem;
@@ -115,22 +132,38 @@ h1 {
    -webkit-user-select: none; /* Safari */
    -ms-user-select: none; /* IE*/
    user-select: none; /* Standard syntax */
-  width: 340px;
-  height: 64px;
+  /* width: 128px;*/
+  height: 64px; 
   text-align: left;
-  margin: 10px;
+  margin: 12px;
   z-index: 3;
+  /* background-color: bisque; */
 }
 .contact {
   -moz-user-select:none; /* firefox */
    -webkit-user-select: none; /* Safari */
    -ms-user-select: none; /* IE*/
    user-select: none; /* Standard syntax */
-  width: 340px;
-  height: 64px;
-  text-align: right;
-  margin: 10px;
+  /* width: 128px;*/
+  height: 64px; 
+  text-align: left;
+  margin: 12px;
   z-index: 3;
+  /* background-color: aqua; */
+}
+.workButton {
+  background-color: #504880;
+  position: relative;
+  height: 64px;
+  width: 128px;
+  margin: 12px;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 video {
   object-fit: cover;
@@ -140,10 +173,21 @@ video {
   top: 0;
   left: 0;
 }
-
+.portfolio{
+  width: 100%;
+}
 @media screen and (max-width: 600px) {
   .containerName{
     font-size: 2.8rem;
+  }
+  .workButton {
+    width: 128px;
+  }
+  .contact{
+    width: 240px;
+  }
+  .skills{
+    width: 328px;
   }
 }
 .ball {
